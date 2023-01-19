@@ -1,0 +1,39 @@
+.service-box {
+  position: relative;
+  &:hover {
+    .service-image {
+      &:after {
+        opacity: 0.1;
+      }
+    }
+    .service-title {
+      color: $color-primary;
+    }
+  }
+  .service-image {
+    box-shadow: 2px 4px 4px 0px #f0f2ed59, -2px -4px 4px 0px #f0f2ed59;
+    border-radius: 15px;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 290px;
+    &:after {
+      inset: 0;
+      position: absolute;
+      content: "";
+      background: linear-gradient(0deg, #ffffff 0, $color-primary 100%);
+      opacity: 0;
+      @extend%trans2;
+    }
+  }
+  .service-title {
+    @extend%trans2;
+    font-weight: 500;
+    padding-top: 16px;
+    font-size: 22px;
+    color: $color-black;
+    text-align: center;
+  }
+}
