@@ -112,6 +112,31 @@ html[dir=rtl] .nav-section .nav-box ul li:first-of-type {
   color: #3ca078;
 }
 
+.footer-section {
+  padding: 60px 0;
+  background-color: #066058;
+}
+.footer-section .contact-footer .contact-footer-title {
+  font-weight: 500;
+  font-size: 22px;
+  color: #bdb2dd;
+  padding-bottom: 24px;
+}
+.footer-section .contact-footer ul li {
+  padding-bottom: 13px;
+}
+.footer-section .contact-footer ul li a {
+  font-weight: 400;
+  font-size: 16px;
+  color: #f0f2ed;
+}
+.footer-section .contact-footer ul li a i {
+  color: #bdb2dd;
+}
+.footer-section .contact-footer ul li a:hover {
+  color: #3ca078;
+}
+
 .service-box {
   position: relative;
 }
@@ -154,6 +179,6 @@ html[dir=rtl] .nav-section .nav-box ul li:first-of-type {
   font-weight: 700;
 }
 
-.nav-section .nav-box ul li a, .nav-section .nav-box ul li a::after, .service-box .service-image:after, .service-box .service-title {
+.nav-section .nav-box ul li a, .nav-section .nav-box ul li a::after, .footer-section .contact-footer ul li a, .service-box .service-image:after, .service-box .service-title {
   transition: 0.2s all ease-in-out;
 }

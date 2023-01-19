@@ -1,0 +1,29 @@
+.footer-section {
+  padding: 60px 0;
+  background-color: $color-primary-dark;
+  .contact-footer {
+    .contact-footer-title {
+      font-weight: 500;
+      font-size: 22px;
+      color: $color-secondary;
+      padding-bottom: 24px;
+    }
+    ul {
+      li {
+        padding-bottom: 13px;
+        a {
+          @extend%trans2;
+          font-weight: 400;
+          font-size: 16px;
+          color: $color-page;
+          i {
+            color: $color-secondary;
+          }
+          &:hover {
+            color: $color-primary;
+          }
+        }
+      }
+    }
+  }
+}
