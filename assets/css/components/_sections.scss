@@ -1,11 +1,24 @@
 .background-section {
   position: relative;
   z-index: 1;
+  &.right-background-section {
+    &:after {
+      background: linear-gradient(
+        270deg,
+        rgba(240, 242, 237, 0) 0.46%,
+        #f0f2ed 35.54%
+      );
+      right: unset;
+      left: 0;
+    }
+  }
   &:after {
     content: "";
     z-index: -2;
     position: absolute;
-    inset: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
     width: 50%;
     background: linear-gradient(
       89.25deg,
@@ -23,12 +36,23 @@
       font-size: 50px;
       color: $color-black;
     }
+
+    .section-title {
+      font-weight: 700;
+      font-size: 36px;
+      color: $color-black;
+      padding: 0 0 30px;
+    }
+  }
+  .section-img {
+    svg {
+      max-width: 100%;
+      height: auto;
+    }
   }
   .intro-img {
     padding: 0 0 40px;
     svg {
-      max-width: 100%;
-      height: auto;
       .ball {
         animation: ball 5s ease infinite forwards;
         @for $i from 1 to 6 {
