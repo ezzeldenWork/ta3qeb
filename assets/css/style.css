@@ -363,7 +363,8 @@ html[dir=rtl] .social-list-box .social-list li {
   -webkit-animation: hand-move 2s ease-in-out 1 forwards;
           animation: hand-move 2s ease-in-out 1 forwards;
 }
-.intro-section .intro-img svg .left-hand {
+.intro-section .intro-img svg .left-hand,
+.intro-section .intro-img svg #one {
   animation: hand-move 2s ease-in-out 1 reverse forwards;
 }
 

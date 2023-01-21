@@ -31,7 +31,8 @@
       .right-hand {
         animation: hand-move 2s ease-in-out 1 forwards;
       }
-      .left-hand {
+      .left-hand,
+      #one {
         animation: hand-move 2s ease-in-out 1 reverse forwards;
       }
     }
