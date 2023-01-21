@@ -1,12 +1,12 @@
 .footer-section {
-  padding: 60px 0;
+  padding: 60px 0 20px;
   background-color: $color-primary-dark;
   .contact-footer {
     .contact-footer-title {
       font-weight: 500;
       font-size: 22px;
       color: $color-secondary;
-      padding-bottom: 24px;
+      padding-bottom: 15px;
     }
     .footer-list {
       li {
@@ -21,6 +21,30 @@
           }
           &:hover {
             color: $color-primary;
+          }
+        }
+      }
+    }
+  }
+  .copyright {
+    padding: 50px 0 0;
+    text-align: center;
+    color: $color-white;
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 772px) {
+  .footer-section {
+    .contact-footer {
+      padding-top: 30px;
+      .contact-footer-title {
+        font-display: 20px;
+      }
+      .footer-list {
+        li {
+          a {
+            font-size: 14px;
           }
         }
       }

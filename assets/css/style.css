@@ -220,14 +220,14 @@ html[dir=rtl] .nav-section .nav-box ul li:first-of-type {
   }
 }
 .footer-section {
-  padding: 60px 0;
+  padding: 60px 0 20px;
   background-color: #066058;
 }
 .footer-section .contact-footer .contact-footer-title {
   font-weight: 500;
   font-size: 22px;
   color: #bdb2dd;
-  padding-bottom: 24px;
+  padding-bottom: 15px;
 }
 .footer-section .contact-footer .footer-list li {
   padding-bottom: 13px;
@@ -243,7 +243,24 @@ html[dir=rtl] .nav-section .nav-box ul li:first-of-type {
 .footer-section .contact-footer .footer-list li a:hover {
   color: #3ca078;
 }
+.footer-section .copyright {
+  padding: 50px 0 0;
+  text-align: center;
+  color: #fff;
+  font-size: 16px;
+}
 
+@media (max-width: 772px) {
+  .footer-section .contact-footer {
+    padding-top: 30px;
+  }
+  .footer-section .contact-footer .contact-footer-title {
+    font-display: 20px;
+  }
+  .footer-section .contact-footer .footer-list li a {
+    font-size: 14px;
+  }
+}
 .service-box {
   position: relative;
 }
