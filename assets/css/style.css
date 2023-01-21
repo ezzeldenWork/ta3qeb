@@ -41,6 +41,12 @@ html[dir=rtl] body {
   padding: 60px 0;
 }
 
+.prag {
+  color: #000;
+  font-weight: 500;
+  font-size: 22px;
+}
+
 .nav-section {
   padding: 60px 0;
   position: relative;
@@ -322,29 +328,43 @@ html[dir=rtl] .social-list-box .social-list li {
   position: relative;
   z-index: 1;
 }
+.background-section.right-background-section:after {
+  background: linear-gradient(270deg, rgba(240, 242, 237, 0) 0.46%, #f0f2ed 35.54%);
+  right: unset;
+  left: 0;
+}
 .background-section:after {
   content: "";
   z-index: -2;
   position: absolute;
-  inset: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
   width: 50%;
   background: linear-gradient(89.25deg, rgba(240, 242, 237, 0) 0.46%, #f0f2ed 35.54%);
+}
+
+.section-content .intro-title {
+  font-weight: 700;
+  font-size: 50px;
+  color: #000;
+}
+.section-content .section-title {
+  font-weight: 700;
+  font-size: 36px;
+  color: #000;
+  padding: 0 0 30px;
 }
 
 .intro-section {
   padding: 10px 0 0;
 }
-.intro-section .section-content .intro-title {
-  font-weight: 700;
-  font-size: 50px;
-  color: #000;
+.intro-section .section-img svg {
+  max-width: 100%;
+  height: auto;
 }
 .intro-section .intro-img {
   padding: 0 0 40px;
-}
-.intro-section .intro-img svg {
-  max-width: 100%;
-  height: auto;
 }
 .intro-section .intro-img svg .ball {
   -webkit-animation: ball 5s ease infinite forwards;
@@ -380,10 +400,10 @@ html[dir=rtl] .social-list-box .social-list li {
 }
 
 @media (max-width: 772px) {
-  .intro-section .section-content {
+  .section-content {
     padding: 24px 0;
   }
-  .intro-section .section-content .intro-title {
+  .section-content .intro-title {
     text-align: center;
     font-size: 30px;
   }
