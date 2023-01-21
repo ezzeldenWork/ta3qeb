@@ -127,7 +127,7 @@ html[dir=rtl] .nav-section .nav-box ul li:first-of-type {
 }
 .nav-section .header-side-box .icon-box div i {
   cursor: pointer;
-  font-size: 22px;
+  font-size: 18px;
   color: #3ca078;
 }
 .nav-section .header-side-box .icon-box div i:hover {
