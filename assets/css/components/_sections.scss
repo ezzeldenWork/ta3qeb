@@ -16,7 +16,7 @@
 }
 
 .intro-section {
-  padding: 10px 0 40px;
+  padding: 10px 0 0;
   .section-content {
     .intro-title {
       font-weight: 700;
@@ -25,6 +25,7 @@
     }
   }
   .intro-img {
+    padding: 0 0 40px;
     svg {
       max-width: 100%;
       height: auto;
@@ -77,6 +78,9 @@
         text-align: center;
         font-size: 30px;
       }
+    }
+    .intro-img {
+      padding: 0 0 0;
     }
   }
 }

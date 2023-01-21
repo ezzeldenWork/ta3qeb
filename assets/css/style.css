@@ -332,12 +332,15 @@ html[dir=rtl] .social-list-box .social-list li {
 }
 
 .intro-section {
-  padding: 10px 0 40px;
+  padding: 10px 0 0;
 }
 .intro-section .section-content .intro-title {
   font-weight: 700;
   font-size: 50px;
   color: #000;
+}
+.intro-section .intro-img {
+  padding: 0 0 40px;
 }
 .intro-section .intro-img svg {
   max-width: 100%;
@@ -416,6 +419,9 @@ html[dir=rtl] .social-list-box .social-list li {
   .intro-section .section-content .intro-title {
     text-align: center;
     font-size: 30px;
+  }
+  .intro-section .intro-img {
+    padding: 0 0 0;
   }
 }
 .nav-section .nav-box ul li a, .nav-section .nav-box ul li a::after, .nav-section .header-side-box .icon-box div i, .footer-section .contact-footer .footer-list li a, .service-box .service-image:after, .service-box .service-title, .social-list-box .social-list li a {
