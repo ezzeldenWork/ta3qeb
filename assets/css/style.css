@@ -381,7 +381,7 @@ html[dir=rtl] .social-list-box .social-list li {
 
 @media (max-width: 772px) {
   .intro-section .section-content {
-    padding: 24px 0 0;
+    padding: 24px 0;
   }
   .intro-section .section-content .intro-title {
     text-align: center;
