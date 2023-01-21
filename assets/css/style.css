@@ -151,7 +151,7 @@ html[dir=rtl] .nav-section .nav-box ul li:first-of-type {
     inset: 0;
     padding: 60px;
     z-index: 99999;
-    background-color: rgba(60, 160, 120, 0.8);
+    background-color: #3ca078;
     display: none;
   }
   .nav-section .nav-box .close-menu {
