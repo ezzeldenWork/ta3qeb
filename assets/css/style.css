@@ -303,21 +303,103 @@ html[dir=rtl] .nav-section .nav-box ul li:first-of-type {
   font-weight: 700;
 }
 
-.socile-list-box .socile-list {
+.social-list-box .social-list {
   display: flex;
   align-items: center;
 }
-html[dir=rtl] .socile-list-box .socile-list li {
+html[dir=rtl] .social-list-box .social-list li {
   padding-left: 20px;
 }
-.socile-list-box .socile-list li a {
+.social-list-box .social-list li a {
   color: #bdb2dd;
   font-size: 20px;
 }
-.socile-list-box .socile-list li a:hover {
+.social-list-box .social-list li a:hover {
   color: #3ca078;
 }
 
-.nav-section .nav-box ul li a, .nav-section .nav-box ul li a::after, .nav-section .header-side-box .icon-box div i, .footer-section .contact-footer .footer-list li a, .service-box .service-image:after, .service-box .service-title, .socile-list-box .socile-list li a {
+.background-section {
+  position: relative;
+  z-index: 1;
+}
+.background-section:after {
+  content: "";
+  z-index: -2;
+  position: absolute;
+  inset: 0;
+  width: 50%;
+  background: linear-gradient(89.25deg, rgba(240, 242, 237, 0) 0.46%, #f0f2ed 35.54%);
+}
+
+.intro-section .intro-img svg {
+  max-width: 100%;
+  height: auto;
+}
+.intro-section .intro-img svg .ball {
+  -webkit-animation: ball 5s ease infinite forwards;
+          animation: ball 5s ease infinite forwards;
+}
+.intro-section .intro-img svg .ball:nth-child(1) {
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+}
+.intro-section .intro-img svg .ball:nth-child(2) {
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+}
+.intro-section .intro-img svg .ball:nth-child(3) {
+  -webkit-animation-delay: 3s;
+          animation-delay: 3s;
+}
+.intro-section .intro-img svg .ball:nth-child(4) {
+  -webkit-animation-delay: 4s;
+          animation-delay: 4s;
+}
+.intro-section .intro-img svg .ball:nth-child(5) {
+  -webkit-animation-delay: 5s;
+          animation-delay: 5s;
+}
+.intro-section .intro-img svg .right-hand {
+  -webkit-animation: hand-move 2s ease-in-out 1 forwards;
+          animation: hand-move 2s ease-in-out 1 forwards;
+}
+.intro-section .intro-img svg .left-hand {
+  animation: hand-move 2s ease-in-out 1 reverse forwards;
+}
+
+@-webkit-keyframes hand-move {
+  from {
+    transform: translateX(0px);
+  }
+  to {
+    transform: translateX(-60px);
+  }
+}
+
+@keyframes hand-move {
+  from {
+    transform: translateX(0px);
+  }
+  to {
+    transform: translateX(-60px);
+  }
+}
+@-webkit-keyframes ball {
+  37% {
+    transform: translate(-1%, 1%);
+  }
+  74% {
+    transform: translate(-1%, 2%);
+  }
+}
+@keyframes ball {
+  37% {
+    transform: translate(-1%, 1%);
+  }
+  74% {
+    transform: translate(-1%, 2%);
+  }
+}
+.nav-section .nav-box ul li a, .nav-section .nav-box ul li a::after, .nav-section .header-side-box .icon-box div i, .footer-section .contact-footer .footer-list li a, .service-box .service-image:after, .service-box .service-title, .social-list-box .social-list li a {
   transition: 0.2s all ease-in-out;
 }

@@ -1,0 +1,61 @@
+.background-section {
+  position: relative;
+  z-index: 1;
+  &:after {
+    content: "";
+    z-index: -2;
+    position: absolute;
+    inset: 0;
+    width: 50%;
+    background: linear-gradient(
+      89.25deg,
+      rgba(240, 242, 237, 0) 0.46%,
+      #f0f2ed 35.54%
+    );
+  }
+}
+
+.intro-section {
+  .intro-img {
+    svg {
+      max-width: 100%;
+      height: auto;
+      .ball {
+        animation: ball 5s ease infinite forwards;
+        @for $i from 1 to 6 {
+          &:nth-child(#{$i}) {
+            animation-delay: $i * 1s;
+          }
+        }
+      }
+      .right-hand {
+        animation: hand-move 2s ease-in-out 1 forwards;
+      }
+      .left-hand {
+        animation: hand-move 2s ease-in-out 1 reverse forwards;
+      }
+    }
+  }
+}
+
+@keyframes hand-move {
+  from {
+    transform: translateX(0px);
+  }
+  to {
+    transform: translateX(-60px);
+  }
+}
+
+@keyframes ball {
+  0% {
+  }
+  37% {
+    transform: translate(-1%, 1%);
+  }
+  74% {
+    transform: translate(-1%, 2%);
+  }
+  100% {
+  }
+}
