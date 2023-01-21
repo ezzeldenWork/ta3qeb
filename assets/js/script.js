@@ -1,15 +1,26 @@
 $(document).ready(function () {
-  $(".mine-navbar .mobileMenu ul .has-chiled").click(function () {
-    $(this).children(".child-ul").slideToggle();
+  // close document click
+  $(document).click(function () {
+    $(".nav-section .header-side-box .search-box").slideUp();
   });
-
-  $(".mine-navbar .open-menu i").click(function () {
-    $(".mobileMenu").addClass("right-0");
-    $("body").addClass("body-over");
+  // search box
+  $(".nav-section .header-side-box .icon-box .search-icon i").click(function (
+    e
+  ) {
+    e.stopPropagation();
+    $(".nav-section .header-side-box .search-box").slideToggle();
   });
-
-  $(".mine-navbar .mobileMenu .exit-icon i").click(function () {
-    $(".mobileMenu").removeClass("right-0");
-    $("body").removeClass("body-over");
+  // search box
+  $(".nav-section .header-side-box .search-box").click(function (e) {
+    e.stopPropagation();
+  });
+  // menu box
+  $(".nav-section .header-side-box .icon-box .open-menu i").click(function (e) {
+    e.stopPropagation();
+    $(".nav-section .nav-box").fadeIn();
+  });
+  $(".nav-section .nav-box .close-menu").click(function (e) {
+    e.stopPropagation();
+    $(".nav-section .nav-box").fadeOut();
   });
 });

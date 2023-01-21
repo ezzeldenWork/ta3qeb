@@ -1,0 +1,19 @@
+.socile-list-box {
+  .socile-list {
+    display: flex;
+    align-items: center;
+    li {
+      @include dir(rtl) {
+        padding-left: 20px;
+      }
+      a {
+        color: $color-secondary;
+        font-size: 20px;
+        @extend%trans2;
+        &:hover {
+          color: $color-primary;
+        }
+      }
+    }
+  }
+}
