@@ -1,7 +1,9 @@
 $(document).ready(function () {
   // close document click
   $(document).click(function () {
-    $(".nav-section .header-side-box .search-box").slideUp();
+    if ($(window).width() < 772) {
+      $(".nav-section .header-side-box .search-box").slideUp();
+    }
   });
   // search box
   $(".nav-section .header-side-box .icon-box .search-icon i").click(function (
