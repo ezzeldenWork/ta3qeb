@@ -331,6 +331,14 @@ html[dir=rtl] .social-list-box .social-list li {
   background: linear-gradient(89.25deg, rgba(240, 242, 237, 0) 0.46%, #f0f2ed 35.54%);
 }
 
+.intro-section {
+  padding: 10px 0 40px;
+}
+.intro-section .section-content .intro-title {
+  font-weight: 700;
+  font-size: 50px;
+  color: #000;
+}
 .intro-section .intro-img svg {
   max-width: 100%;
   height: auto;
@@ -399,6 +407,15 @@ html[dir=rtl] .social-list-box .social-list li {
   }
   74% {
     transform: translate(-1%, 2%);
+  }
+}
+@media (max-width: 772px) {
+  .intro-section .section-content {
+    padding: 24px 0 0;
+  }
+  .intro-section .section-content .intro-title {
+    text-align: center;
+    font-size: 30px;
   }
 }
 .nav-section .nav-box ul li a, .nav-section .nav-box ul li a::after, .nav-section .header-side-box .icon-box div i, .footer-section .contact-footer .footer-list li a, .service-box .service-image:after, .service-box .service-title, .social-list-box .social-list li a {

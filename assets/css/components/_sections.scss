@@ -16,6 +16,14 @@
 }
 
 .intro-section {
+  padding: 10px 0 40px;
+  .section-content {
+    .intro-title {
+      font-weight: 700;
+      font-size: 50px;
+      color: $color-black;
+    }
+  }
   .intro-img {
     svg {
       max-width: 100%;
@@ -58,5 +66,17 @@
     transform: translate(-1%, 2%);
   }
   100% {
+  }
+}
+
+@media (max-width: 772px) {
+  .intro-section {
+    .section-content {
+      padding: 24px 0 0;
+      .intro-title {
+        text-align: center;
+        font-size: 30px;
+      }
+    }
   }
 }
