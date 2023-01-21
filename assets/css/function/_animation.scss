@@ -1,0 +1,21 @@
+@keyframes hand-move {
+  from {
+    transform: translateX(0px);
+  }
+  to {
+    transform: translateX(-95px);
+  }
+}
+
+@keyframes ball {
+  0% {
+  }
+  37% {
+    transform: translate(-1%, 1%);
+  }
+  74% {
+    transform: translate(-1%, 2%);
+  }
+  100% {
+  }
+}

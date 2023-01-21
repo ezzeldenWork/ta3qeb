@@ -379,21 +379,32 @@ html[dir=rtl] .social-list-box .social-list li {
   animation: hand-move 2s ease-in-out 1 reverse forwards;
 }
 
+@media (max-width: 772px) {
+  .intro-section .section-content {
+    padding: 24px 0 0;
+  }
+  .intro-section .section-content .intro-title {
+    text-align: center;
+    font-size: 30px;
+  }
+  .intro-section .intro-img {
+    padding: 0 0 0;
+  }
+}
 @-webkit-keyframes hand-move {
   from {
     transform: translateX(0px);
   }
   to {
-    transform: translateX(-60px);
+    transform: translateX(-95px);
   }
 }
-
 @keyframes hand-move {
   from {
     transform: translateX(0px);
   }
   to {
-    transform: translateX(-60px);
+    transform: translateX(-95px);
   }
 }
 @-webkit-keyframes ball {
@@ -410,18 +421,6 @@ html[dir=rtl] .social-list-box .social-list li {
   }
   74% {
     transform: translate(-1%, 2%);
-  }
-}
-@media (max-width: 772px) {
-  .intro-section .section-content {
-    padding: 24px 0 0;
-  }
-  .intro-section .section-content .intro-title {
-    text-align: center;
-    font-size: 30px;
-  }
-  .intro-section .intro-img {
-    padding: 0 0 0;
   }
 }
 .nav-section .nav-box ul li a, .nav-section .nav-box ul li a::after, .nav-section .header-side-box .icon-box div i, .footer-section .contact-footer .footer-list li a, .service-box .service-image:after, .service-box .service-title, .social-list-box .social-list li a {
