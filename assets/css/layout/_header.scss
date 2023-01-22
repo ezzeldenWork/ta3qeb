@@ -61,6 +61,7 @@
           width: 100%;
           font-weight: 600;
           color: $color-black;
+          background: transparent;
           &::placeholder {
             color: $color-black;
           }
@@ -186,6 +187,21 @@
         padding: 0 0 10px;
         box-shadow: 0 10px 10px rgba($color-primary, 0.1);
         display: none;
+        z-index: 1;
+        &:after {
+          content: "";
+          z-index: -2;
+          position: absolute;
+          right: 0;
+          top: 0;
+          bottom: 0;
+          width: 50%;
+          background: linear-gradient(
+            89.25deg,
+            rgba(240, 242, 237, 0) 0.46%,
+            #f0f2ed 35.54%
+          );
+        }
         form {
           width: 73%;
           margin: 0 auto;

@@ -28,37 +28,6 @@
   }
 }
 
-.intro-section {
-  padding: 10px 0 0;
-
-  .section-img {
-    svg {
-      max-width: 100%;
-      height: auto;
-    }
-  }
-  .intro-img {
-    padding: 0 0 40px;
-    svg {
-      .ball {
-        animation: ball 5s ease infinite forwards;
-        @for $i from 1 to 6 {
-          &:nth-child(#{$i}) {
-            animation-delay: $i * 1s;
-          }
-        }
-      }
-      .right-hand {
-        animation: hand-move 2s 1s ease-in-out forwards;
-      }
-      .left-hand,
-      #one {
-        animation: hand-move 2s 1s ease-in-out reverse forwards;
-      }
-    }
-  }
-}
-
 .about-page-section {
   padding: 0 0 90px 0;
 }
@@ -77,11 +46,6 @@
 }
 
 @media (max-width: 772px) {
-  .intro-section {
-    .intro-img {
-      padding: 0 0 0;
-    }
-  }
   .about-page-section {
     padding: 0;
   }

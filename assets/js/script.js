@@ -2,7 +2,7 @@ $(document).ready(function () {
   // close document click
 
   $(document).click(function () {
-    if ($(window).width() < 772) {
+    if ($(window).width() < 992) {
       $(".nav-section .header-side-box .search-box").slideUp();
     }
   });

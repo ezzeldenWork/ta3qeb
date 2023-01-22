@@ -1,76 +1,44 @@
-.section-content {
-  padding-bottom: 36px;
-  .intro-title {
-    font-weight: 700;
-    font-size: 50px;
-    color: $color-black;
-  }
-
-  .section-title {
-    font-weight: 700;
-    font-size: 36px;
-    color: $color-black;
-    padding: 0 0 30px;
-  }
-}
-
 .section-title-box {
+  margin: 0 0 30px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  title {
-    font-size: 36px;
+
+  .section-title {
+    font-size: 28px;
     font-weight: 700;
     color: $color-black;
   }
-}
-
-.more-link {
-  a {
-    font-weight: 700;
-    font-size: 18px;
-    color: $color-primary;
-    @extend%trans2;
-    &:hover {
-      color: $color-primary-dark;
-    }
-  }
-}
-
-@media (max-width: 992px) {
-  .section-content {
-    .intro-title {
-      font-size: 30px;
-    }
-    .section-title {
-      font-size: 26px;
-    }
-  }
-  .section-title-box {
-    title {
-      font-size: 20px;
-    }
-  }
-}
-@media (max-width: 772px) {
-  .section-content {
-    padding: 24px 0;
-    text-align: center;
-    .intro-title {
-      font-size: 24px;
-    }
-    .section-title {
-      font-size: 26px;
-    }
-  }
-  .section-title-box {
-    title {
-      font-size: 24px;
-    }
-  }
   .more-link {
     a {
-      font-size: 14px;
+      font-size: 20px;
+      color: $color-primary;
+      font-weight: 500;
+      @extend%trans2;
+      &:hover {
+        color: $color-black;
+      }
     }
+  }
+}
+
+@media (max-width: 772px) {
+  .section-title-box {
+    &.center-media {
+      margin: 40px 0 20px 0;
+      justify-content: center;
+    }
+    .section-title {
+      font-size: 20px;
+    }
+    .more-link {
+      a {
+        font-size: 16px;
+      }
+    }
+  }
+  .section-content {
+    padding: 0 0 20px;
+    text-align: center;
   }
 }
