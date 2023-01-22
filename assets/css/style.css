@@ -53,7 +53,7 @@ html[dir=rtl] body {
   }
 }
 .nav-section {
-  padding: 60px 0;
+  padding: 35px 0;
   position: relative;
 }
 .nav-section .nav-box .close-menu {
@@ -619,6 +619,10 @@ html[dir=rtl] .social-list-box .social-list li {
   animation: hand-move 2s 1s ease-in-out reverse forwards;
 }
 
+.about-page-section {
+  padding: 0 0 90px 0;
+}
+
 .frist-pazel {
   -webkit-animation: frist-pazel-animation 2s ease-in-out 3s 1 forwards;
           animation: frist-pazel-animation 2s ease-in-out 3s 1 forwards;
@@ -642,6 +646,9 @@ html[dir=rtl] .social-list-box .social-list li {
 @media (max-width: 772px) {
   .intro-section .intro-img {
     padding: 0 0 0;
+  }
+  .about-page-section {
+    padding: 0;
   }
 }
 @-webkit-keyframes hand-move {

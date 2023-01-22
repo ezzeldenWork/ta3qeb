@@ -59,6 +59,10 @@
   }
 }
 
+.about-page-section {
+  padding: 0 0 90px 0;
+}
+
 .frist-pazel {
   animation: frist-pazel-animation 2s ease-in-out 3s 1 forwards;
 }
@@ -77,5 +81,8 @@
     .intro-img {
       padding: 0 0 0;
     }
+  }
+  .about-page-section {
+    padding: 0;
   }
 }
