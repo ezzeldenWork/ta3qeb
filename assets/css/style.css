@@ -47,7 +47,7 @@ html[dir=rtl] body {
   font-size: 22px;
 }
 
-@media (max-width: 772px) {
+@media (max-width: 992px) {
   .prag {
     font-size: 16px;
   }
@@ -477,13 +477,16 @@ html[dir=rtl] .nav-section .nav-box ul li:first-of-type {
   text-align: center;
 }
 
-.section-title {
+.section-content {
   padding-bottom: 36px;
+}
+
+.section-title-box {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-.section-title .title {
+.section-title-box title {
   font-size: 36px;
   font-weight: 700;
   color: #000;
@@ -498,11 +501,16 @@ html[dir=rtl] .nav-section .nav-box ul li:first-of-type {
   color: #066058;
 }
 
+@media (max-width: 992px) {
+  .section-title-box title {
+    font-size: 20px;
+  }
+}
 @media (max-width: 772px) {
-  .section-title {
+  .section-content {
     padding-bottom: 26px;
   }
-  .section-title .title {
+  .section-title-box title {
     font-size: 24px;
   }
   .more-link a {
@@ -619,13 +627,21 @@ html[dir=rtl] .social-list-box .social-list li {
           animation: forth-pazel-animation 2s ease-in-out 3s 1 forwards;
 }
 
+@media (max-width: 992px) {
+  .section-content .intro-title {
+    font-size: 30px;
+  }
+  .section-content .section-title {
+    font-size: 26px;
+  }
+}
 @media (max-width: 772px) {
   .section-content {
     padding: 24px 0;
     text-align: center;
   }
   .section-content .intro-title {
-    font-size: 30px;
+    font-size: 24px;
   }
   .section-content .section-title {
     font-size: 26px;
