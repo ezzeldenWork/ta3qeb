@@ -227,14 +227,18 @@ html[dir=rtl] .nav-section .nav-box ul li:first-of-type {
     width: 100%;
     right: 0;
     padding: 0 0 10px;
-    display: none;
+    display: flex;
     z-index: 1;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.2s all ease-in-out;
   }
   .nav-section .header-side-box .search-box.open-search {
-    display: flex !important;
+    opacity: 1;
+    visibility: visible;
   }
   .nav-section .header-side-box .search-box form {
     width: 73%;
