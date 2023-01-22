@@ -1,7 +1,37 @@
 .section-title {
   padding-bottom: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   .title {
     font-size: 36px;
     font-weight: 700;
+    color: $color-black;
+  }
+}
+
+.more-link {
+  a {
+    font-weight: 700;
+    font-size: 18px;
+    color: $color-primary;
+    @extend%trans2;
+    &:hover {
+      color: $color-primary-dark;
+    }
+  }
+}
+
+@media (max-width: 772px) {
+  .section-title {
+    padding-bottom: 26px;
+    .title {
+      font-size: 24px;
+    }
+  }
+  .more-link {
+    a {
+      font-size: 14px;
+    }
   }
 }

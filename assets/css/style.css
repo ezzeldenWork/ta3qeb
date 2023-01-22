@@ -479,12 +479,36 @@ html[dir=rtl] .nav-section .nav-box ul li:first-of-type {
 
 .section-title {
   padding-bottom: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 .section-title .title {
   font-size: 36px;
   font-weight: 700;
+  color: #000;
 }
 
+.more-link a {
+  font-weight: 700;
+  font-size: 18px;
+  color: #3ca078;
+}
+.more-link a:hover {
+  color: #066058;
+}
+
+@media (max-width: 772px) {
+  .section-title {
+    padding-bottom: 26px;
+  }
+  .section-title .title {
+    font-size: 24px;
+  }
+  .more-link a {
+    font-size: 14px;
+  }
+}
 .social-list-box .social-list {
   display: flex;
   align-items: center;
@@ -706,6 +730,6 @@ html[dir=rtl] .social-list-box .social-list li {
     transform: rotate(-3.6deg) translate(-50px, 18px) scale(1.01);
   }
 }
-.nav-section .nav-box ul li a, .nav-section .nav-box ul li a::after, .nav-section .header-side-box .icon-box div i, .newsletter-section .newsletter-box .newsletter-form-box form input, .newsletter-section .newsletter-box .newsletter-form-box form button, .footer-section .contact-footer .footer-list li a, .service-box .service-image:after, .service-box .service-title, .social-list-box .social-list li a {
+.nav-section .nav-box ul li a, .nav-section .nav-box ul li a::after, .nav-section .header-side-box .icon-box div i, .newsletter-section .newsletter-box .newsletter-form-box form input, .newsletter-section .newsletter-box .newsletter-form-box form button, .footer-section .contact-footer .footer-list li a, .service-box .service-image:after, .service-box .service-title, .more-link a, .social-list-box .social-list li a {
   transition: 0.2s all ease-in-out;
 }
