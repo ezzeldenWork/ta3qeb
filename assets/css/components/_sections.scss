@@ -64,14 +64,27 @@
         }
       }
       .right-hand {
-        animation: hand-move 2s ease-in-out 1 forwards;
+        animation: hand-move 2s 1s ease-in-out forwards;
       }
       .left-hand,
       #one {
-        animation: hand-move 2s ease-in-out 1 reverse forwards;
+        animation: hand-move 2s 1s ease-in-out reverse forwards;
       }
     }
   }
+}
+
+.frist-pazel {
+  animation: frist-pazel-animation 2s ease-in-out 3s 1 forwards;
+}
+.sc-pazel {
+  animation: sc-pazel-animation 2s ease-in-out 3s 1 forwards;
+}
+.th-pazel {
+  animation: th-pazel-animation 2s ease-in-out 3s 1 forwards;
+}
+.forth-pazel {
+  animation: forth-pazel-animation 2s ease-in-out 3s 1 forwards;
 }
 
 @media (max-width: 772px) {

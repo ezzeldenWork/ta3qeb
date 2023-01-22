@@ -1,5 +1,6 @@
 $(document).ready(function () {
   // close document click
+
   $(document).click(function () {
     if ($(window).width() < 772) {
       $(".nav-section .header-side-box .search-box").slideUp();

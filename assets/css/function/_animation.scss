@@ -19,3 +19,39 @@
   100% {
   }
 }
+
+@keyframes frist-pazel-animation {
+  from {
+    transform: rotate(0deg) translate(0px, 0px);
+  }
+  to {
+    transform: rotate(2deg) translate(15px, 4px);
+  }
+}
+
+@keyframes sc-pazel-animation {
+  from {
+    transform: rotate(0deg) translate(0px, 0px);
+  }
+  to {
+    transform: rotate(0deg) translate(-10px, 13px);
+  }
+}
+
+@keyframes th-pazel-animation {
+  from {
+    transform: rotate(0deg) translate(0px, 0px);
+  }
+  to {
+    transform: rotate(-1deg) translate(-5px, 4px);
+  }
+}
+
+@keyframes forth-pazel-animation {
+  from {
+    transform: rotate(0deg) translate(0px, 0px);
+  }
+  to {
+    transform: rotate(-3.6deg) translate(-50px, 18px) scale(1.01);
+  }
+}
