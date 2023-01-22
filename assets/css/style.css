@@ -239,7 +239,7 @@ html[dir=rtl] .nav-section .nav-box ul li:first-of-type {
   padding: 77px;
   border-radius: 15px;
   text-align: center;
-  background-color: rgba(60, 160, 120, 0.1);
+  background-color: #f6f7f4;
 }
 .newsletter-section .newsletter-box .newsletter-img-after {
   position: absolute;
