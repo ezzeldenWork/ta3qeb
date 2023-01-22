@@ -218,29 +218,31 @@ html[dir=rtl] .nav-section .nav-box ul li:first-of-type {
     justify-content: flex-end;
   }
   .nav-section .header-side-box .search-box {
-    top: 73%;
-    position: absolute;
+    inset: 0;
+    position: fixed;
     background-color: white;
     width: 100%;
     right: 0;
     padding: 0 0 10px;
-    box-shadow: 0 10px 10px rgba(60, 160, 120, 0.1);
     display: none;
     z-index: 1;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
-  .nav-section .header-side-box .search-box:after {
-    content: "";
-    z-index: -2;
-    position: absolute;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    width: 50%;
-    background: linear-gradient(89.25deg, rgba(240, 242, 237, 0) 0.46%, #f0f2ed 35.54%);
+  .nav-section .header-side-box .search-box.open-search {
+    display: flex !important;
   }
   .nav-section .header-side-box .search-box form {
     width: 73%;
     margin: 0 auto;
+  }
+  .nav-section .header-side-box .search-box .close-search {
+    font-size: 20px;
+    margin: 12px 0 0;
+    font-weight: 600;
+    cursor: pointer;
+    color: #3ca078;
   }
 }
 .newsletter-section {
@@ -557,65 +559,11 @@ html[dir=ltr] .button-box button .text {
   box-shadow: none;
 }
 
-.edit-modle {
-  z-index: 9999999;
-}
-.edit-modle .modal-content {
-  padding: 0 10px 40px;
-}
-.edit-modle .modal-header {
-  border: 0;
-  justify-content: flex-end;
-}
-.edit-modle .modal-header button {
-  color: #066058;
-  border: 0;
-  background-color: transparent;
-  font-size: 22px;
-}
-.edit-modle .modal-header button:focus {
-  border: 0;
-  outline: none;
-  box-shadow: none;
-}
-.edit-modle .error-content img {
-  height: 100px;
-}
-.edit-modle .error-content .error-title {
-  padding: 20px 0 60px;
-  font-weight: 500;
-  font-size: 20px;
-  color: #000;
-}
-.edit-modle .model-button {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-wrap: wrap;
-}
-.edit-modle .model-button .button-box {
-  width: 45%;
-}
-.edit-modle .model-button .button-box a {
-  padding: 6px;
-}
-
 @media (max-width: 772px) {
   .button-box a,
 .button-box button {
     font-size: 14px;
     padding: 8px 16px;
-  }
-  .edit-modle .error-content .error-title {
-    padding: 20px 0 30px;
-    font-size: 14px;
-  }
-  .edit-modle .model-button {
-    display: block;
-  }
-  .edit-modle .model-button .button-box {
-    padding: 10px 0 0;
-    width: 100%;
   }
 }
 .service-box {
@@ -750,6 +698,62 @@ html[dir=rtl] .social-list-box .social-list li {
 @media (max-width: 772px) {
   .about-page-section {
     padding: 0;
+  }
+}
+.edit-modle {
+  z-index: 9999999;
+}
+.edit-modle .modal-content {
+  padding: 0 10px 40px;
+}
+.edit-modle .modal-header {
+  border: 0;
+  justify-content: flex-end;
+}
+.edit-modle .modal-header button {
+  color: #066058;
+  border: 0;
+  background-color: transparent;
+  font-size: 22px;
+}
+.edit-modle .modal-header button:focus {
+  border: 0;
+  outline: none;
+  box-shadow: none;
+}
+.edit-modle .error-content img {
+  height: 100px;
+}
+.edit-modle .error-content .error-title {
+  padding: 20px 0 60px;
+  font-weight: 500;
+  font-size: 20px;
+  color: #000;
+}
+.edit-modle .model-button {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.edit-modle .model-button .button-box {
+  width: 45%;
+}
+.edit-modle .model-button .button-box a {
+  padding: 6px;
+}
+
+@media (max-width: 772px) {
+  .edit-modle .error-content .error-title {
+    padding: 20px 0 30px;
+    font-size: 14px;
+  }
+  .edit-modle .model-button {
+    display: block;
+  }
+  .edit-modle .model-button .button-box {
+    padding: 10px 0 0;
+    width: 100%;
   }
 }
 @-webkit-keyframes hand-move {

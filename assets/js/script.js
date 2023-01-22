@@ -1,17 +1,18 @@
 $(document).ready(function () {
   // close document click
 
-  $(document).click(function () {
-    if ($(window).width() < 992) {
-      $(".nav-section .header-side-box .search-box").slideUp();
-    }
-  });
   // search box
   $(".nav-section .header-side-box .icon-box .search-icon i").click(function (
     e
   ) {
     e.stopPropagation();
-    $(".nav-section .header-side-box .search-box").slideToggle();
+    $(".nav-section .header-side-box .search-box").addClass("open-search");
+  });
+  $(".nav-section .header-side-box .search-box .close-search").click(function (
+    e
+  ) {
+    e.stopPropagation();
+    $(".nav-section .header-side-box .search-box").removeClass("open-search");
   });
   // search box
   $(".nav-section .header-side-box .search-box").click(function (e) {

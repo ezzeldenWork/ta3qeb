@@ -1,0 +1,62 @@
+.edit-modle {
+  z-index: 9999999;
+  .modal-content {
+    padding: 0 10px 40px;
+  }
+  .modal-header {
+    border: 0;
+    justify-content: flex-end;
+    button {
+      color: $color-primary-dark;
+      border: 0;
+      background-color: transparent;
+      font-size: 22px;
+      &:focus {
+        border: 0;
+        outline: none;
+        box-shadow: none;
+      }
+    }
+  }
+  .error-content {
+    img {
+      height: 100px;
+    }
+    .error-title {
+      padding: 20px 0 60px;
+      font-weight: 500;
+      font-size: 20px;
+      color: $color-black;
+    }
+  }
+  .model-button {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    .button-box {
+      width: 45%;
+      a {
+        padding: 6px;
+      }
+    }
+  }
+}
+
+@media (max-width: 772px) {
+  .edit-modle {
+    .error-content {
+      .error-title {
+        padding: 20px 0 30px;
+        font-size: 14px;
+      }
+    }
+    .model-button {
+      display: block;
+      .button-box {
+        padding: 10px 0 0;
+        width: 100%;
+      }
+    }
+  }
+}

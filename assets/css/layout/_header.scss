@@ -179,32 +179,30 @@
         justify-content: flex-end;
       }
       .search-box {
-        top: 73%;
-        position: absolute;
+        inset: 0;
+        position: fixed;
         background-color: rgba($color-white, 1);
         width: 100%;
         right: 0;
         padding: 0 0 10px;
-        box-shadow: 0 10px 10px rgba($color-primary, 0.1);
         display: none;
         z-index: 1;
-        &:after {
-          content: "";
-          z-index: -2;
-          position: absolute;
-          right: 0;
-          top: 0;
-          bottom: 0;
-          width: 50%;
-          background: linear-gradient(
-            89.25deg,
-            rgba(240, 242, 237, 0) 0.46%,
-            #f0f2ed 35.54%
-          );
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        &.open-search {
+          display: flex !important;
         }
         form {
           width: 73%;
           margin: 0 auto;
+        }
+        .close-search {
+          font-size: 20px;
+          margin: 12px 0 0;
+          font-weight: 600;
+          cursor: pointer;
+          color: rgba($color-primary, 1);
         }
       }
     }
