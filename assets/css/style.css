@@ -156,7 +156,7 @@ html[dir=rtl] .nav-section .nav-box ul li:first-of-type {
 }
 @media (max-width: 992px) {
   .nav-section {
-    padding: 30px;
+    padding: 30px 0;
     z-index: 9999 !important;
   }
   .nav-section .nav-box {
@@ -516,6 +516,108 @@ html[dir=rtl] .nav-section .nav-box ul li:first-of-type {
     padding: 0 0 0;
   }
 }
+.button-box.border-button a,
+.button-box.border-button button {
+  background-color: transparent;
+  color: #066058;
+}
+.button-box.border-button a:hover,
+.button-box.border-button button:hover {
+  color: #fff;
+}
+.button-box a,
+.button-box button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-size: 16px;
+  border: 1px solid #066058;
+  background-color: #066058;
+  color: #fff;
+}
+.button-box a:hover,
+.button-box button:hover {
+  background-color: #3ca078;
+  border-color: #3ca078;
+}
+html[dir=rtl] .button-box a .text,
+html[dir=rtl] .button-box button .text {
+  padding: 0 10px 0 0;
+}
+html[dir=ltr] .button-box a .text,
+html[dir=ltr] .button-box button .text {
+  padding: 0 0 0 10px;
+}
+.button-box a:focus,
+.button-box button:focus {
+  border-color: #3ca078;
+  outline: none;
+  box-shadow: none;
+}
+
+.edit-modle {
+  z-index: 9999999;
+}
+.edit-modle .modal-content {
+  padding: 0 10px 40px;
+}
+.edit-modle .modal-header {
+  border: 0;
+  justify-content: flex-end;
+}
+.edit-modle .modal-header button {
+  color: #066058;
+  border: 0;
+  background-color: transparent;
+  font-size: 22px;
+}
+.edit-modle .modal-header button:focus {
+  border: 0;
+  outline: none;
+  box-shadow: none;
+}
+.edit-modle .error-content img {
+  height: 100px;
+}
+.edit-modle .error-content .error-title {
+  padding: 20px 0 60px;
+  font-weight: 500;
+  font-size: 20px;
+  color: #000;
+}
+.edit-modle .model-button {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.edit-modle .model-button .button-box {
+  width: 45%;
+}
+.edit-modle .model-button .button-box a {
+  padding: 6px;
+}
+
+@media (max-width: 772px) {
+  .button-box a,
+.button-box button {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+  .edit-modle .error-content .error-title {
+    padding: 20px 0 30px;
+    font-size: 14px;
+  }
+  .edit-modle .model-button {
+    display: block;
+  }
+  .edit-modle .model-button .button-box {
+    padding: 10px 0 0;
+    width: 100%;
+  }
+}
 .service-box {
   position: relative;
 }
@@ -746,6 +848,7 @@ html[dir=rtl] .social-list-box .social-list li {
     transform: rotate(-3.6deg) translate(-50px, 18px) scale(1.01);
   }
 }
-.nav-section .nav-box ul li a, .nav-section .nav-box ul li a::after, .nav-section .header-side-box .icon-box div i, .newsletter-section .newsletter-box .newsletter-form-box form input, .newsletter-section .newsletter-box .newsletter-form-box form button, .footer-section .contact-footer .footer-list li a, .service-box .service-image:after, .service-box .service-title, .section-title-box .more-link a, .social-list-box .social-list li a {
+.nav-section .nav-box ul li a, .nav-section .nav-box ul li a::after, .nav-section .header-side-box .icon-box div i, .newsletter-section .newsletter-box .newsletter-form-box form input, .newsletter-section .newsletter-box .newsletter-form-box form button, .footer-section .contact-footer .footer-list li a, .button-box a,
+.button-box button, .service-box .service-image:after, .service-box .service-title, .section-title-box .more-link a, .social-list-box .social-list li a {
   transition: 0.2s all ease-in-out;
 }
