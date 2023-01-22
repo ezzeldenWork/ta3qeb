@@ -80,6 +80,9 @@
           justify-content: center;
         }
       }
+      .close-search {
+        display: none;
+      }
     }
     .icon-box {
       display: none;
@@ -210,6 +213,7 @@
           font-weight: 600;
           cursor: pointer;
           color: rgba($color-primary, 1);
+          display: block;
         }
       }
     }
