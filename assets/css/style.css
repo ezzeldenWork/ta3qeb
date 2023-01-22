@@ -130,6 +130,9 @@ html[dir=rtl] .nav-section .nav-box ul li:first-of-type {
   border: 0;
   background-color: transparent;
   color: #3ca078;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .nav-section .header-side-box .icon-box {
   display: none;
