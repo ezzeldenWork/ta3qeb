@@ -37,3 +37,27 @@
     text-align: center;
   }
 }
+
+.service-fillter-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  text-align: center;
+  margin-bottom: 24px;
+  height: 200px;
+  padding: 10px;
+  background: #f0f2ed;
+  @extend%trans2;
+  color: $color-black;
+  box-shadow: -2px -4px 4px rgba(240, 242, 237, 0.35),
+    2px 4px 4px rgba(240, 242, 237, 0.35);
+  border-radius: 5px;
+  .text {
+    font-size: 20px;
+  }
+  &:hover {
+    background: $color-primary;
+    color: $color-white;
+  }
+}
