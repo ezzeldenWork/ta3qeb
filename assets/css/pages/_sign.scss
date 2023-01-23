@@ -104,7 +104,7 @@
         color: $color-primary;
         @extend%trans2;
         &:hover {
-          color: $color-secondary;
+          color: $color-primary;
         }
       }
     }
