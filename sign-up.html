@@ -36,10 +36,50 @@
         <div class="container">
           <div class="row align-items-center">
             <div class="col-md-6">
-              <p class="prag text-center pm-4">تسجيل دخول</p>
+              <div class="sign-content">
+                <h4 class="title">أهلا وسهلا بك</h4>
+                <p class="prag">حدد هويتك لبدء عملية التسجيل</p>
+                <ul class="sign-list list-unstyled">
+                  <li>
+                    <a href="#" class="active"> مستخدم </a>
+                  </li>
+                  <li>
+                    <a href="#"> مكتب </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <p class="prag text-center pm-4">انشاء حساب مستخدم</p>
               <div class="sign-form-box">
                 <form action="">
                   <div class="row">
+                    <div class="col-md-6">
+                      <div class="form-group">
+                        <label for="name">الاسم</label>
+                        <input
+                          type="text"
+                          name="name"
+                          id="name"
+                          class="form-control"
+                          placeholder="اكتب اسمك"
+                          aria-describedby="helpId"
+                        />
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="form-group">
+                        <label for="lastName">اسم العائلة:</label>
+                        <input
+                          type="text"
+                          name="lastName"
+                          id="lastName"
+                          class="form-control"
+                          placeholder=" اكتب اسم العائلة"
+                          aria-describedby="helpId"
+                        />
+                      </div>
+                    </div>
                     <div class="col-md-12">
                       <div class="form-group">
                         <label for="email">البريد الالكتروني</label>
@@ -67,6 +107,32 @@
                       </div>
                     </div>
                     <div class="col-md-12">
+                      <div class="form-group">
+                        <label for="passwordConfirm">تأكيد كلمة المرور</label>
+                        <input
+                          type="text"
+                          name="passwordConfirm"
+                          id="passwordConfirm"
+                          class="form-control"
+                          placeholder="ادخل كلمة المرور مجددا"
+                          aria-describedby="helpId"
+                        />
+                      </div>
+                    </div>
+                    <div class="col-md-12">
+                      <div class="form-group">
+                        <label for="phoneNumber">الهاتف:</label>
+                        <input
+                          type="text"
+                          name="phoneNumber"
+                          id="phoneNumber"
+                          class="form-control"
+                          placeholder="ادخل رقم الهاتف"
+                          aria-describedby="helpId"
+                        />
+                      </div>
+                    </div>
+                    <div class="col-md-12">
                       <div class="button-submit-box">
                         <button class="button-submit">سجل الان</button>
                       </div>
@@ -74,18 +140,12 @@
                     <div class="col-md-12">
                       <div class="have-title-box">
                         <h4 class="text">
-                          ليس لديك حساب ؟ <a href="#">انشئ حساب</a>
+                          لديك حساب بالفعل؟ <a href="#">تسجيل دخول</a>
                         </h4>
                       </div>
                     </div>
                   </div>
                 </form>
-              </div>
-            </div>
-            <div class="col-md-6 order-md-last order-sm-first order-first">
-              <div class="sign-content">
-                <h4 class="title">أهلا بعودتك!</h4>
-                <p class="prag">ادخل بياناتك وقم بتسجيل الدخول</p>
               </div>
             </div>
           </div>

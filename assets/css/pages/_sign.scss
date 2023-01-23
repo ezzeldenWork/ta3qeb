@@ -89,8 +89,8 @@
       width: 50%;
       @extend%trans2;
       &:hover {
-        border-color: $color-secondary;
-        background-color: $color-secondary;
+        border-color: $color-primary;
+        background-color: $color-primary;
       }
     }
   }
