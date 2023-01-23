@@ -26,6 +26,14 @@ body {
   @include dir(rtl) {
     font-family: "Tajawal", sans-serif;
   }
-  // @include dir(ltr) {
-  // }
+  &.login-page {
+    height: 100vh;
+  }
+}
+@media (max-width: 772px) {
+  body {
+    &.login-page {
+      height: unset;
+    }
+  }
 }
