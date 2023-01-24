@@ -121,7 +121,7 @@
           }
           &:hover {
             color: $color-white;
-            letter-spacing: 1px;
+            letter-spacing: 0.3px;
           }
         }
       }
@@ -129,9 +129,11 @@
   }
   .copyright {
     padding: 50px 0 0;
-    text-align: center;
-    color: $color-white;
-    font-size: 16px;
+    .prag {
+      text-align: center;
+      color: $color-white;
+      font-size: 16px;
+    }
   }
 }
 

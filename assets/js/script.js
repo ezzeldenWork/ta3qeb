@@ -1,5 +1,9 @@
 $(document).ready(function () {
-  // close document click
+  if ($("html").attr("dir") == "rtl") {
+    var dir_lang = true;
+  } else {
+    var dir_lang = false;
+  }
 
   // search box
   $(".nav-section .header-side-box .icon-box .search-icon i").click(function (
@@ -26,5 +30,19 @@ $(document).ready(function () {
   $(".nav-section .nav-box .close-menu").click(function (e) {
     e.stopPropagation();
     $(".nav-section .nav-box").fadeOut();
+  });
+  // company-slider
+  $(".feedback-slider").slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    outHight: true,
+    autoplaySpeed: 2000,
+    rtl: dir_lang,
+    infinite: false,
+    dots: false,
+    prevArrow:
+      "<div class='circle-arrow time-left'><i class='fa fa-chevron-left'></i></div>",
+    nextArrow:
+      "<div class='circle-arrow time-right'><i class='fa fa-chevron-right'></i></div>",
   });
 });

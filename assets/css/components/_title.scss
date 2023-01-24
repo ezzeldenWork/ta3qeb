@@ -3,6 +3,12 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  &.section-title-box-img {
+    justify-content: unset;
+    .section-title {
+      padding: 0 14px;
+    }
+  }
 
   .section-title {
     font-size: 28px;
