@@ -739,7 +739,7 @@ html[dir=rtl] .sign-page .sign-form-box form .form-group input {
 }
 
 .feedback-slider-box {
-  padding: 40px 58px;
+  padding: 0px 58px;
 }
 .feedback-slider-box .feedback-slider .circle-arrow {
   z-index: 22;
