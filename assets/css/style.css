@@ -693,21 +693,54 @@ html[dir=rtl] .sign-page .sign-form-box form .form-group input {
   padding: 33px;
   border-radius: 15px;
   margin-bottom: 30px;
+}
+.services-details-section .services-details-box .services-details-box-content {
   text-align: center;
 }
-.services-details-section .services-details-box .services-details-title-box {
+.services-details-section .services-details-box .services-details-box-content .services-details-title-box {
   font-size: 24px;
   font-weight: 600;
   color: #000;
 }
-.services-details-section .services-details-box .prag {
+.services-details-section .services-details-box .services-details-box-content .prag {
   max-width: 80%;
   font-size: 18px;
   margin: 0 auto;
   padding: 20px 0 30px;
 }
-.services-details-section .services-details-box .button-box a {
+.services-details-section .services-details-box .services-details-box-content .button-box a {
   display: inline-block;
+}
+.services-details-section .services-details-box .services-details-box-form {
+  display: none;
+}
+.services-details-section .services-details-box .services-details-box-form .form-box {
+  margin: 0 0 10px;
+  display: flex;
+  align-items: center;
+}
+.services-details-section .services-details-box .services-details-box-form .form-box .prag {
+  font-size: 15px;
+}
+.services-details-section .services-details-box .services-details-box-form .form-box input,
+.services-details-section .services-details-box .services-details-box-form .form-box select {
+  border-radius: 5px;
+  border: 1px solid rgb(85, 85, 85);
+  margin: 0 10px;
+  height: 25px;
+  width: 70px;
+  text-align: center;
+}
+.services-details-section .services-details-box .services-details-box-form .form-box input:focus,
+.services-details-section .services-details-box .services-details-box-form .form-box select:focus {
+  outline: none;
+  box-shadow: 0;
+  border: 1px solid #3ca078;
+}
+.services-details-section .services-details-box .services-details-box-form .form-box .unit-text {
+  font-size: 16px;
+  font-weight: 400;
+  color: #066058;
 }
 .services-details-section .section-details-list-box {
   padding-bottom: 40px;
@@ -807,11 +840,18 @@ html[dir=rtl] .feedback-slider-box .feedback-slider .circle-arrow.time-right {
 }
 
 @media (max-width: 772px) {
-  .services-details-section .services-details-box .services-details-title-box {
+  .services-details-section .services-details-box .services-details-box-content .services-details-title-box {
     font-size: 14px;
   }
-  .services-details-section .services-details-box .prag {
+  .services-details-section .services-details-box .services-details-box-content .prag {
     font-size: 12px;
+  }
+  .services-details-section .services-details-box .services-details-box-form .form-box {
+    display: block;
+  }
+  .services-details-section .services-details-box .services-details-box-form .form-box .prag {
+    font-size: 13px;
+    margin: 0 0 10px;
   }
   .services-details-section .section-title-box .section-title {
     font-size: 16px;

@@ -31,6 +31,22 @@ $(document).ready(function () {
     e.stopPropagation();
     $(".nav-section .nav-box").fadeOut();
   });
+
+  // show-details-button
+
+  $(
+    ".services-details-section .services-details-box .services-details-box-content .button-box.show-details-button"
+  ).click(function (e) {
+    e.preventDefault();
+    $(
+      ".services-details-section .services-details-box .services-details-box-content"
+    ).hide();
+    console.log(1);
+    $(
+      ".services-details-section .services-details-box .services-details-box-form"
+    ).show();
+  });
+
   // company-slider
   $(".feedback-slider").slick({
     slidesToShow: 1,

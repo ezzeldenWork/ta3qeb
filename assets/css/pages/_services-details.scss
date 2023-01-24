@@ -5,21 +5,53 @@
     padding: 33px;
     border-radius: 15px;
     margin-bottom: 30px;
-    text-align: center;
-    .services-details-title-box {
-      font-size: 24px;
-      font-weight: 600;
-      color: $color-black;
+    .services-details-box-content {
+      text-align: center;
+      .services-details-title-box {
+        font-size: 24px;
+        font-weight: 600;
+        color: $color-black;
+      }
+      .prag {
+        max-width: 80%;
+        font-size: 18px;
+        margin: 0 auto;
+        padding: 20px 0 30px;
+      }
+      .button-box {
+        a {
+          display: inline-block;
+        }
+      }
     }
-    .prag {
-      max-width: 80%;
-      font-size: 18px;
-      margin: 0 auto;
-      padding: 20px 0 30px;
-    }
-    .button-box {
-      a {
-        display: inline-block;
+    .services-details-box-form {
+      display: none;
+      .form-box {
+        margin: 0 0 10px;
+        display: flex;
+        align-items: center;
+        .prag {
+          font-size: 15px;
+        }
+        input,
+        select {
+          border-radius: 5px;
+          border: 1px solid $color-gray;
+          margin: 0 10px;
+          height: 25px;
+          width: 70px;
+          text-align: center;
+          &:focus {
+            outline: none;
+            box-shadow: 0;
+            border: 1px solid $color-primary;
+          }
+        }
+        .unit-text {
+          font-size: 16px;
+          font-weight: 400;
+          color: rgba($color-primary-dark, 1);
+        }
       }
     }
   }
@@ -131,11 +163,23 @@
 @media (max-width: 772px) {
   .services-details-section {
     .services-details-box {
-      .services-details-title-box {
-        font-size: 14px;
+      .services-details-box-content {
+        .services-details-title-box {
+          font-size: 14px;
+        }
+        .prag {
+          font-size: 12px;
+        }
       }
-      .prag {
-        font-size: 12px;
+      .services-details-box-form {
+        .form-box {
+          display: block;
+
+          .prag {
+            font-size: 13px;
+            margin: 0 0 10px;
+          }
+        }
       }
     }
 
